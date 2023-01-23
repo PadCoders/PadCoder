@@ -6,7 +6,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import ApiCaller from '../api/apicaller';
 import {ProblemsetQuestionList} from '../api/interfaces';
 import TerminalSvg from '../svg/terminal';
-
 import { ListNode, ExpandType } from '../components/list-node';
 
 export const MainPage: React.FC = () => {
