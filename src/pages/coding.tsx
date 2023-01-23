@@ -9,8 +9,8 @@ import {
   useColorScheme,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import RenderHTML from 'react-native-render-html';
-
+import React, {useEffect, useState} from 'react';
+import {Pressable, Text, TextInput, View} from 'react-native';
 import ApiCaller from '../api/apicaller';
 import {ProblemDetail} from '../api/interfaces';
 import ACSvg from '../svg/ac';
