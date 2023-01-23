@@ -7,7 +7,6 @@ import ApiCaller from '../api/apicaller';
 import {ProblemsetQuestionList} from '../api/interfaces';
 import TerminalSvg from '../svg/terminal';
 
-import { ListLeaf } from '../components/list-leaf';
 import { ListNode, ExpandType } from '../components/list-node';
 
 export const MainPage: React.FC = () => {
