@@ -1,9 +1,9 @@
-import React from 'react'
-import { Text, Pressable } from 'react-native'
+import React from 'react';
+import {Text, Pressable} from 'react-native';
 
 export enum ExpandType {
   LEAF,
-  NODE
+  NODE,
 }
 
 interface ListNodeProps {
@@ -11,23 +11,19 @@ interface ListNodeProps {
   expandType: ExpandType;
 }
 
-const handleExpandChildren = () => {
-  
-}
+const handleExpandChildren = (expandType: ExpandType) => {
+  console.log(expandType);
+};
 
 export const ListNode = ({title, expandType}: ListNodeProps) => {
-
-
-
   return (
-    <Pressable >
-
-      <Text >ListNode</Text>
+    <Pressable onPress={() => handleExpandChildren(expandType)}>
+      <Text>{title}</Text>
       {['child', 'child2'].map(ele => (
-        <Pressable><Text>{ele}</Text></Pressable>
+        <Pressable>
+          <Text>{ele}</Text>
+        </Pressable>
       ))}
     </Pressable>
-  )
-}
-
-
+  );
+};
